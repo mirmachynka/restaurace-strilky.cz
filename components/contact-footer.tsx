@@ -40,11 +40,11 @@ export function ContactFooter() {
               792 288 900
             </a>
             <a
-              href="mailto:kontakt@restaurace-strilky.cz"
+              href="mailto:info@restaurace-strilky.cz"
               className="flex items-center gap-2 text-sm text-white/72 hover:text-white"
             >
               <Mail className="h-4 w-4" />
-              kontakt@restaurace-strilky.cz
+              info@restaurace-strilky.cz
             </a>
           </div>
           <div className="flex flex-col items-start gap-3 sm:items-end">

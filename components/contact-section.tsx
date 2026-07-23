@@ -12,8 +12,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "E-mail",
-    value: "kontakt@restaurace-strilky.cz",
-    href: "mailto:kontakt@restaurace-strilky.cz",
+    value: "info@restaurace-strilky.cz",
+    href: "mailto:info@restaurace-strilky.cz",
   },
 ]
 
