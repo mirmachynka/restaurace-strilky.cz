@@ -1,0 +1,201 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "#0j5v09p24ykm": [
+        "../../../src/frontend/icon_specs.ts"
+      ],
+      "#0wu4h8i1cqp4": [
+        "../../../src/frontend/components/chrome/language/styles.scss"
+      ],
+      "#11t2u7sblpl8": [
+        "../../../src/frontend/shared/routes.ts"
+      ],
+      "#1np2lgf6n0my": [
+        "../../../src/frontend/components/chrome/header/styles.scss"
+      ],
+      "#1t5n47nmjbj2": [
+        "../../../src/frontend/components/domain/contact/i18n/cs.ts"
+      ],
+      "#27mt6qqf1ihe": [
+        "../../frontend/components/button.ts"
+      ],
+      "#2a97kzldgel2": [
+        "../../../src/frontend/shared/identity.ts"
+      ],
+      "#2ig7rnexheln": [
+        "../../../src/frontend/components/chrome/language/menu.tsx"
+      ],
+      "#2ohv8csm9b87": [
+        "../../../src/frontend/components/chrome/footer/view.tsx"
+      ],
+      "#372ddxeebklo": [
+        "../../../src/frontend/shared/page_content.tsx"
+      ],
+      "#3cm6e2b2l7jr": [
+        "../../frontend/palette.ts"
+      ],
+      "#3ohm4sea1eaf": [
+        "../../frontend/theme.ts"
+      ],
+      "#3vf4qlwszcip": [
+        "../../frontend/tokens.ts"
+      ],
+      "#4ydubj0ex7t1": [
+        "../../frontend/config.ts"
+      ],
+      "#5artrbkjww7f": [
+        "../../../src/frontend/components/domain/contact/i18n/en.ts"
+      ],
+      "#5z9ydq7cz53q": [
+        "../../../src/frontend/components/domain/hero/styles.scss"
+      ],
+      "#72opuou5b6ws": [
+        "../../../src/frontend/shared/content_island.tsx"
+      ],
+      "#7c3q4mq62aih": [
+        "../../../src/frontend/components/chrome/header/i18n/cs.ts"
+      ],
+      "#7zq5em9jsdhk": [
+        "../../../src/frontend/components/domain/venues/i18n/en.ts"
+      ],
+      "#888a228i8srs": [
+        "../../../src/frontend/components/primitives/button.tsx"
+      ],
+      "#awbrz278qu5h": [
+        "../../../src/frontend/shared/language/use.ts"
+      ],
+      "#bkksp7detra1": [
+        "../../../src/bin/frontend/options.ts"
+      ],
+      "#bqsri9swmr2o": [
+        "../../../src/frontend/components/domain/venues/styles.scss"
+      ],
+      "#c0bfft3knn5u": [
+        "../../../src/frontend/shared/images.ts"
+      ],
+      "#ckwctbjthe9o": [
+        "../../../src/frontend/components/domain/venues/parts.tsx"
+      ],
+      "#cvspqei2yixz": [
+        "../../../src/frontend/components/chrome/language/i18n/en.ts"
+      ],
+      "#dm27ycw9hpw9": [
+        "../../i18n/config.ts"
+      ],
+      "#dsn2xo5sa3qv": [
+        "../../seo/config.ts"
+      ],
+      "#dvyq39mo8aqz": [
+        "../../../src/frontend/components/domain/hero/i18n/en.ts"
+      ],
+      "#e0czfofnbr32": [
+        "../../../src/frontend/components/domain/menu/i18n/en.ts"
+      ],
+      "#eh2a1lmsq850": [
+        "../../../src/frontend/pages/home.tsx"
+      ],
+      "#f2q1j54vv3ht": [
+        "../../bundler/config.ts"
+      ],
+      "#fj03d91mfw5h": [
+        "../../../src/bin/shared/logger.ts"
+      ],
+      "#gfb4hgb24tch": [
+        "../../../src/frontend/shared/chrome_roots.tsx"
+      ],
+      "#ghznwuz4a4a7": [
+        "../../../src/bin/frontend/seo.ts"
+      ],
+      "#gite3w3i4071": [
+        "../../../src/frontend/shared/content.ts"
+      ],
+      "#hsrqrc142bfd": [
+        "../../frontend/components/overlays.ts"
+      ],
+      "#iep5k4wih2p9": [
+        "../../../src/frontend/components/chrome/footer/i18n/cs.ts"
+      ],
+      "#kzxyecbkpkw2": [
+        "../../../src/frontend/components/chrome/header/i18n/en.ts"
+      ],
+      "#loq2hgg4id6s": [
+        "../../../src/frontend/components/domain/venues/i18n/cs.ts"
+      ],
+      "#mqlupz1ivdro": [
+        "../../../src/frontend/ssr/entry.tsx"
+      ],
+      "#osf6i469d2ky": [
+        "../../../src/types/globals.d.ts"
+      ],
+      "#p72uxn2qor5u": [
+        "../../../src/frontend/components/domain/hero/i18n/cs.ts"
+      ],
+      "#pk69z5i45d2d": [
+        "../../../src/frontend/js/index.client.tsx"
+      ],
+      "#pwpimnq3783w": [
+        "../../../src/frontend/components/domain/hero/view.tsx"
+      ],
+      "#qlkxyc0f527f": [
+        "../../../src/frontend/components/domain/venues/view.tsx"
+      ],
+      "#r1vjzujprugv": [
+        "../../../src/bin/dev.ts"
+      ],
+      "#r7xyezt17nru": [
+        "../../frontend/components/index.ts"
+      ],
+      "#rqlf31rhsl79": [
+        "../../../src/frontend/components/chrome/language/i18n/cs.ts"
+      ],
+      "#sbpabyhqi03y": [
+        "../../../src/frontend/components/chrome/page/styles.scss"
+      ],
+      "#skz83bfh9xdb": [
+        "../../../src/frontend/components/domain/contact/view.tsx"
+      ],
+      "#sm1vtkbabimn": [
+        "../../../src/frontend/components/domain/menu/i18n/cs.ts"
+      ],
+      "#sojjxvotax6h": [
+        "../../frontend/typography.ts"
+      ],
+      "#uzmgyuj69eb4": [
+        "../../../src/frontend/components/primitives/styles/button.scss"
+      ],
+      "#v7sa4g4qkjw7": [
+        "../../../src/frontend/shared/language/policy.ts"
+      ],
+      "#vrb20aref0dk": [
+        "../../../src/frontend/components/domain/menu/styles.scss"
+      ],
+      "#x14c7bfcdk9s": [
+        "../../../src/frontend/components/domain/contact/styles.scss"
+      ],
+      "#x8ck4r1hdhd1": [
+        "../../../src/bin/frontend/ssr.ts"
+      ],
+      "#xkbh5bxde0ti": [
+        "../../../src/frontend/components/domain/menu/view.tsx"
+      ],
+      "#xm6kq3aohw8n": [
+        "../../../src/frontend/components/chrome/header/view.tsx"
+      ],
+      "#y4baldmhvns7": [
+        "../../startup/config.ts"
+      ],
+      "#yi1nbgs2q5qa": [
+        "../../../src/frontend/components/chrome/footer/i18n/en.ts"
+      ],
+      "#ysiw0nhbt46j": [
+        "../../frontend/systems.ts"
+      ],
+      "#ysn1n4g1tunu": [
+        "../../../src/frontend/components/chrome/footer/styles.scss"
+      ],
+      "#z0qwv2djb6yz": [
+        "../../../src/bin/frontend/build.ts"
+      ]
+    }
+  }
+}

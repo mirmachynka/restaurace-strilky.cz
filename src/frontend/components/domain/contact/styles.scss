@@ -1,0 +1,129 @@
+.contact {
+  gap: 2rem;
+}
+
+.contact__head {
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact__tiles {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact__tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  border: 1px solid var(--border-surface-1);
+  border-radius: 1rem;
+  background: var(--surface-1);
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: border-color 160ms ease;
+}
+
+.contact__tile:hover {
+  border-color: color-mix(in oklch, var(--primary-500), transparent 80%);
+}
+
+.contact__tile-icon {
+  display: flex;
+  height: 2.75rem;
+  width: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md, 0.5rem);
+  background: color-mix(in oklch, var(--primary-500), transparent 90%);
+  color: var(--primary-500);
+}
+
+.contact__tile-label {
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--text-color-muted);
+}
+
+.contact__tile-value {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.contact__addresses {
+  border: 1px solid var(--border-surface-1);
+  border-radius: 1rem;
+  background: var(--surface-1);
+  padding: 1.5rem;
+}
+
+.contact__addresses-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.contact__address {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact__address-icon {
+  display: flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md, 0.5rem);
+  background: color-mix(in oklch, var(--primary-500), transparent 86%);
+  color: var(--primary-500);
+}
+
+.contact__address-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.contact__address-name {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.contact__address-line {
+  font-size: 0.875rem;
+  color: var(--text-color-muted);
+}
+
+.contact__address-action {
+  flex: none;
+  border-color: var(--border-surface-1);
+  color: var(--text-color);
+}
+
+.contact__map {
+  position: relative;
+  min-height: 26rem;
+  overflow: hidden;
+  border: 1px solid var(--border-surface-1);
+  border-radius: 1rem;
+}
+
+.contact__map-frame {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .contact__tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

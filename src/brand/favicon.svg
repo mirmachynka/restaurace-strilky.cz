@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Restaurace Strilky">
+  <rect width="64" height="64" rx="12" fill="#4a3324"/>
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#f3eee7" stroke-width="3"/>
+  <circle cx="32" cy="32" r="10.5" fill="none" stroke="#c9a227" stroke-width="2"/>
+  <rect x="19.5" y="14" width="3.4" height="16" rx="1.7" fill="#f3eee7"/>
+  <rect x="41.1" y="14" width="3.4" height="16" rx="1.7" fill="#f3eee7"/>
+  <rect x="19.5" y="30" width="3.4" height="20" rx="1.7" fill="#f3eee7"/>
+  <rect x="41.1" y="30" width="3.4" height="20" rx="1.7" fill="#f3eee7"/>
+</svg>

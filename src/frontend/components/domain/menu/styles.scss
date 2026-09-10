@@ -1,0 +1,13 @@
+.menu__frame {
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-surface-1);
+  border-radius: 1rem;
+  background: var(--white-500);
+}
+
+.menu__iframe {
+  display: block;
+  width: 100%;
+  background: var(--white-500);
+}

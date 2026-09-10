@@ -1,0 +1,41 @@
+.site-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-md, 0.4rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+  transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.site-button--accent {
+  background: var(--secondary-500);
+  color: var(--white-500);
+}
+
+.site-button--accent:hover {
+  background: color-mix(in oklch, var(--secondary-500), transparent 10%);
+}
+
+.site-button--white {
+  background: var(--white-500);
+  color: var(--primary-500);
+}
+
+.site-button--white:hover {
+  background: color-mix(in oklch, var(--white-500), transparent 10%);
+}
+
+.site-button--outline {
+  border: 1px solid color-mix(in oklch, var(--white-500), transparent 76%);
+  background: transparent;
+  color: var(--white-500);
+}
+
+.site-button--outline:hover {
+  border-color: color-mix(in oklch, var(--white-500), transparent 62%);
+  background: color-mix(in oklch, var(--white-500), transparent 90%);
+}

@@ -1,34 +1,34 @@
 {
   "compilerOptions": {
+    "allowJs": false,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "target": "ES6",
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
+    "noEmit": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
-    "incremental": true,
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2020",
+    "types": [
+      "bun"
+    ],
+    "useDefineForClassFields": true
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "vite.config.ts"
-  ],
   "exclude": [
+    "dist",
     "node_modules"
+  ],
+  "extends": "./.trebired/code-discipline/generated/tsconfig.paths.json",
+  "include": [
+    ".trebired",
+    "src",
+    ".ssr/**/*.ts"
   ]
 }
