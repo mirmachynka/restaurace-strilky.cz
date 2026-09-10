@@ -121,6 +121,9 @@
       "#loq2hgg4id6s": [
         "../../../src/frontend/components/domain/venues/i18n/cs.ts"
       ],
+      "#m25zjyw7g2mj": [
+        "../../frontend/components/media.ts"
+      ],
       "#mqlupz1ivdro": [
         "../../../src/frontend/ssr/entry.tsx"
       ],

@@ -35,7 +35,7 @@ function HeaderContent() {
 
     <div className="site-bar__actions">
     <LanguageMenu />
-    <Button className="site-bar__cta" href="#kontakt">{translate("cta")}</Button>
+    <Button href="#kontakt">{translate("cta")}</Button>
     </div>
 
     <button

@@ -39,6 +39,7 @@
   "#iep5k4wih2p9": "./src/frontend/components/chrome/footer/i18n/cs.ts",
   "#kzxyecbkpkw2": "./src/frontend/components/chrome/header/i18n/en.ts",
   "#loq2hgg4id6s": "./src/frontend/components/domain/venues/i18n/cs.ts",
+  "#m25zjyw7g2mj": "./.trebired/frontend/components/media.ts",
   "#mqlupz1ivdro": "./src/frontend/ssr/entry.tsx",
   "#osf6i469d2ky": "./src/types/globals.d.ts",
   "#p72uxn2qor5u": "./src/frontend/components/domain/hero/i18n/cs.ts",
