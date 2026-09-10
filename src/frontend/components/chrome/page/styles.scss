@@ -37,16 +37,8 @@ body {
   padding-inline: var(--site-gutter);
 }
 
-.section__eyebrow {
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--primary-500);
-}
-
 .section__title {
-  margin-top: 0.75rem;
+  margin-top: 0;
   font-family: var(--tbf-font-family-display, "Playfair Display", Georgia, serif);
   font-size: clamp(1.875rem, 5vw, 3rem);
   font-weight: 700;

@@ -46,7 +46,6 @@ function Contact() {
     <section className="section section--contact" id="kontakt">
     <div className="section__inner contact">
     <div className="contact__head">
-    <span className="section__eyebrow">{translate("eyebrow")}</span>
     <h2 className="section__title">{translate("title")}</h2>
     <p className="section__lead">{translate("lead")}</p>
     </div>

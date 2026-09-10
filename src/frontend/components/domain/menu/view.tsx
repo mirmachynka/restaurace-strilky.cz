@@ -12,7 +12,6 @@ function LunchMenu() {
   return (
     <section className="section section--menu" id="poledni-menu">
     <div className="section__inner menu">
-    <span className="section__eyebrow">{translate("eyebrow")}</span>
     <h2 className="section__title">{translate("title")}</h2>
     <p className="section__lead">{translate("lead")}</p>
 

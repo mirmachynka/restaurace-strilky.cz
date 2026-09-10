@@ -2,7 +2,6 @@ import { defineMessages } from "@trebired/i18n";
 
 export default defineMessages({
     accommodation: "Accommodation",
-    eyebrow: "Our venues",
     gallery: {
       bar: "The bar at the Community Centre Restaurant in Střílky with draught beer",
       events: "Space for events and receptions at the restaurant",
