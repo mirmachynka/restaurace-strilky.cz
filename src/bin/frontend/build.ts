@@ -12,8 +12,9 @@ import type {
 } from "@trebired/bundler";
 import path from "node:path";
 
-import { createLocaleBootScript } from "@trebired/frontend";
+import { createLocaleBootScript, createLocaleShellRoutes } from "@trebired/frontend";
 
+import seoConfig from "#dsn2xo5sa3qv";
 import { logger } from "#fj03d91mfw5h";
 import { LANGUAGE_ROUTING } from "#v7sa4g4qkjw7";
 import { allRoutePaths } from "#11t2u7sblpl8";
@@ -44,15 +45,18 @@ async function writeSiteShell(
   rootDir: string,
 ): Promise<void> {
   const bodies = await renderRouteBodies(options.supportedI18nLanguages || [], rootDir);
-  const routes = allRoutePaths().map((routePath) => ({
-        body: `${bodies[routePath] || ""}${siteStructuredData(routePath, rootDir)}`,
-        meta: { ...siteShellMeta(routePath, SHELL_LANG), lang: SHELL_LANG },
-        path: routePath,
-  }));
+  const strategy = seoConfig.localeStrategy;
+  const routes = createLocaleShellRoutes({
+      meta: siteShellMeta,
+      paths: allRoutePaths(),
+      render: (routePath, locale) => bodies[routePath]?.[locale] || "",
+      routing: LANGUAGE_ROUTING,
+      strategy,
+  }).map((route) => ({ ...route, body: `${route.body}${siteStructuredData(route.sourcePath, rootDir)}` }));
   await buildStaticShell({
       build,
       config: options,
-      meta: { bootScripts: [createLocaleBootScript(LANGUAGE_ROUTING)], lang: SHELL_LANG },
+      meta: { bootScripts: [createLocaleBootScript(LANGUAGE_ROUTING, { strategy })], lang: SHELL_LANG },
       routes,
   });
 }

@@ -67,7 +67,9 @@ Czech by default and English after switching, both at `/`:
 
 ### One URL, language switched in place
 
-Both languages live at `/`. A boot script in the head resolves the visitor's language from their saved choice, the `ui_lang` cookie or the browser, and when it is English the template is swapped in while the document is still parsing, so a reload shows English before the application bundle runs. Switching language re-renders every root in place and updates `<html lang>`, the title and the description, with no reload and no change to the URL. Search engines index the Czech page.
+Visitors stay at `/`. A boot script in the head reads the saved choice or the `ui_lang` cookie, and when it names the other language that template is swapped in while the document is still parsing, so a reload shows it before the application bundle runs. Switching language re-renders every root in place and updates `<html lang>`, the title and the description, with no reload and no change to the URL.
+
+For search engines, `localeStrategy: "prefix"` in `.trebired/seo/config.ts` also writes `/en`, rendered in English with its own canonical URL and `hreflang` links, so both languages are indexed. Nothing on the site links or redirects to it. Set the strategy to `"none"` to serve one page per route instead.
 
 ### Third-party embeds
 
