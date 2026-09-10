@@ -16,6 +16,12 @@ export default defineConfig({
       },
       fonts: {
         families: {
+          display: {
+            package: "playfair-display",
+            family: "Playfair Display",
+            subsets: ["latin", "latin-ext"],
+            weights: [600, 700],
+          },
           sans: {
             package: "inter",
             family: "Inter",
