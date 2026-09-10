@@ -13,7 +13,7 @@
     }
   },
   "name": "restaurace-strilky-cz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Marketing site for Restaurace Střílky: restaurant, pub and accommodation. React frontend, static build, no backend.",
   "type": "module",
   "private": true,

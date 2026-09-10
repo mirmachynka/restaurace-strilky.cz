@@ -11,9 +11,6 @@ import { breakpoints, typography } from "./typography";
 export default defineConfig({
     forVersion: "13.1.2",
     assets: {
-      favicon: {
-        default: "src/brand/favicon.svg",
-      },
       fonts: {
         families: {
           display: {

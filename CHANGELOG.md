@@ -4,6 +4,10 @@ All notable changes to `restaurace-strilky-cz` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.0.1
+
+- Removed the favicon and the README logo. The brand mark added in 1.0.0 was drawn for the rebuild, not taken from the business, so the site now ships no favicon and no logo, and `.trebired/frontend/config.ts` declares no favicon source.
+
 ## 1.0.0
 
 - Migrated the 0.1.0 site from Vite, Tailwind CSS, shadcn/ui and `@base-ui/react` to the Trebired application layout: `.trebired/*` package configs, `src/frontend`, `src/bin`, `src/types`, built by `@trebired/bundler` and rendered with `@trebired/frontend`.
