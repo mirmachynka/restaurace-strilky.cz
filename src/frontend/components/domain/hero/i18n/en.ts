@@ -12,12 +12,12 @@ export default defineMessages({
       stay: { desc: "Right in Střílky", title: "Accommodation" },
     },
     images: {
-      bar: "The bar at Restaurace Kulturní dům in Střílky with draught beer",
-      hall: "The main hall of Restaurace Kulturní dům in Střílky",
+      bar: "The bar at the Community Centre Restaurant in Střílky with draught beer",
+      hall: "The main hall of the Community Centre Restaurant in Střílky",
       interior: "The cosy interior of the restaurant in Střílky",
     },
     lead:
-    "Restaurace Kulturní dům and Hospoda Gól share one aim: good food, comfortable " +
+    "The Community Centre Restaurant and Gól Pub share one aim: good food, comfortable " +
       "surroundings and a warm atmosphere for family celebrations, company events and everyday meals.",
-    title: "Restaurace Střílky",
+    title: "Střílky Restaurant",
 });

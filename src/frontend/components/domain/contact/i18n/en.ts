@@ -10,7 +10,7 @@ export default defineMessages({
     phone: "Phone",
     title: "We look forward to seeing you",
     venues: {
-      gol: "Hospoda Gól",
-      kulturni_dum: "Restaurace Kulturní dům",
+      gol: "Gól Pub",
+      kulturni_dum: "Community Centre Restaurant",
     },
 });

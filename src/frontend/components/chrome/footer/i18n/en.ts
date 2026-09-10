@@ -5,8 +5,9 @@ export default defineMessages({
     "A restaurant and pub in the centre of Střílky. Traditional Czech cooking, honest " +
       "surroundings and space for events.",
     facebook: "Facebook",
+    name: "Střílky Restaurant",
     venues: {
-      gol: "Hospoda Gól",
-      kulturni_dum: "Restaurace Kulturní dům",
+      gol: "Gól Pub",
+      kulturni_dum: "Community Centre Restaurant",
     },
 });

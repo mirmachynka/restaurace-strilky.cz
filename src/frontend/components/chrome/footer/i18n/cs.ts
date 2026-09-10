@@ -5,6 +5,7 @@ export default defineMessages({
     "Restaurace a hospoda v srdci obce Střílky. Tradiční česká kuchyně, poctivé zázemí " +
       "a prostory pro pořádání akcí.",
     facebook: "Facebook",
+    name: "Restaurace Střílky",
     venues: {
       gol: "Hospoda Gól",
       kulturni_dum: "Restaurace Kulturní dům",

@@ -17,9 +17,9 @@ const ROUTES: Record<string, Record<SiteLanguage, RouteMeta>> = {
         "čepované pivo, zázemí pro oslavy i ubytování.",
     },
     en: {
-      title: "Restaurace Střílky, pub and accommodation",
+      title: "Střílky Restaurant, pub and accommodation",
       description:
-      "Restaurace Kulturní dům and Hospoda Gól in Střílky serve Czech cooking and " +
+      "The Community Centre Restaurant and Gól Pub in Střílky serve Czech cooking and " +
         "draught beer, with space for celebrations and rooms to stay in.",
     },
   },

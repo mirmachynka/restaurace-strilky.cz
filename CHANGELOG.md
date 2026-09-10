@@ -4,6 +4,10 @@ All notable changes to `restaurace-strilky-cz` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.0.2
+
+- Translated the names left in Czech on the English page. The header, hero and footer read Střílky Restaurant, the venues read Community Centre Restaurant and Gól Pub in the venue cards, contact, footer, menu and image descriptions, and the English page title and description use the same names. The footer and its copyright line previously printed the Czech product name from `package.json` in every language; they now take the name from the footer's translation files.
+
 ## 1.0.1
 
 - Removed the favicon and the README logo. The brand mark added in 1.0.0 was drawn for the rebuild, not taken from the business, so the site now ships no favicon and no logo, and `.trebired/frontend/config.ts` declares no favicon source.

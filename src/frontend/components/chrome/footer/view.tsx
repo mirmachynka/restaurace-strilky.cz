@@ -3,7 +3,7 @@ import { createLocalTranslator } from "@trebired/i18n";
 
 import { FACEBOOK_URL, VENUES } from "#gite3w3i4071";
 import { ICON_FACEBOOK, ICON_MAIL, ICON_MAP_PIN, ICON_PHONE } from "#0j5v09p24ykm";
-import { contactEmail, contactHref, contactPhone, contactPhoneHref, productDisplayName } from "#2a97kzldgel2";
+import { contactEmail, contactHref, contactPhone, contactPhoneHref } from "#2a97kzldgel2";
 import { useLanguage } from "#awbrz278qu5h";
 
 const FOUNDED_YEAR = 2025;
@@ -16,7 +16,7 @@ function FooterContent() {
     <div className="site-foot">
     <div className="site-foot__top">
     <div className="site-foot__brand">
-    <span className="site-foot__name">{productDisplayName}</span>
+    <span className="site-foot__name">{translate("name")}</span>
     <p className="site-foot__blurb">{translate("blurb")}</p>
     </div>
 
@@ -47,7 +47,7 @@ function FooterContent() {
     </TextLink>
     </div>
     <span className="site-foot__meta">
-    &copy; {FOUNDED_YEAR} {productDisplayName}
+    &copy; {FOUNDED_YEAR} {translate("name")}
     </span>
     </div>
     </div>
