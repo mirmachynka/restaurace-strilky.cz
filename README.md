@@ -70,18 +70,18 @@ Package behaviour is configured under `.trebired/`:
 
 | File | Owns |
 | --- | --- |
-| `.trebired/frontend/config.ts` | Palette, fonts, favicon source, static icon specs, enabled systems |
+| `.trebired/frontend/config.ts` | Palette, fonts, favicon source, static icon specs, enabled systems, and the button, popover and lightbox tokens in `components/` |
 | `.trebired/bundler/config.ts` | Frontend directory, build output directory, public path |
 | `.trebired/seo/config.ts` | Site URL, locales, locale strategy, robots policy, sitemap defaults |
 | `.trebired/i18n/config.ts` | Supported languages, fallback language, checker root |
 | `.trebired/startup/config.ts` | Dev server port requirement and shutdown timeout |
-| `.trebired/code-discipline/config.ts` | Preset and banned patterns |
+| `.trebired/code-discipline/config.ts` | Version, preset and banned patterns |
 
 The site is light only. Product and organization identity live in `package.json#config` and are injected as build-time defines.
 
 ## Runtime
 
-The build emits an ES module client bundle, two stylesheets, the self hosted Inter and Playfair Display files, the rasterized favicon set, `robots.txt`, `sitemap.xml` and one prerendered HTML document per locale. Icons resolve from a build-generated static cache, so the page makes no icon requests. Netlify builds the site with the command and publish directory declared in `netlify.toml`.
+The build emits an ES module client bundle, two stylesheets, the self hosted Inter and Playfair Display files, the rasterized favicon set, `robots.txt`, `sitemap.xml` and two prerendered documents: `/` in Czech and `/en` in English, each carrying the other language as a switchable template. Icons resolve from a build-generated static cache, so the page makes no icon requests. Netlify builds the site with the command and publish directory declared in `netlify.toml`.
 
 ## Contributing
 
