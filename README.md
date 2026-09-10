@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/screens/mark.png" alt="Restaurace Střílky" width="120">
+<img src="src/brand/favicon.svg" alt="Restaurace Střílky" width="120">
 
 **The website of Restaurace Střílky: a bilingual, prerendered page for Restaurace Kulturní dům and Hospoda Gól, with the two venues, today's lunch menu, rooms to stay in and how to get in touch.**
 
@@ -22,7 +22,6 @@ Restaurace Střílky is a Trebired product, licensed under the MIT License. See 
 
 - [Install](#install)
 - [Quick Start](#quick-start)
-- [Screens](#screens)
 - [Concepts](#concepts)
 - [Configuration](#configuration)
 - [Runtime](#runtime)
@@ -44,20 +43,6 @@ bun run dev
 ```
 
 The dev server runs behind the Code Discipline gate and serves on port 3000. `bun run build` writes the client and one prerendered document per route, carrying every language, into `dist`, the directory Netlify publishes. `bun run verify` runs the discipline check, the typecheck and the build.
-
-## Screens
-
-Czech by default and English after switching, both at `/`:
-
-| | |
-| --- | --- |
-| ![Home](docs/screens/home.png) | ![Home in English](docs/screens/home-en.png) |
-
-<div align="center">
-
-<img src="docs/screens/mobile.png" alt="Restaurace Střílky on a phone" width="300">
-
-</div>
 
 ## Concepts
 
