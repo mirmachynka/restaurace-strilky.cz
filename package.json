@@ -33,7 +33,6 @@
     "@fontsource/inter": "^5.2.8",
     "@fontsource/playfair-display": "^5.3.0",
     "@trebired/bundler": "^5.13.1",
-    "@trebired/env": "^0.2.1",
     "@trebired/frontend": "12.16.5",
     "@trebired/i18n": "^0.6.1",
     "@trebired/logger": "^2.7.1",
@@ -53,5 +52,13 @@
     "sass": "^1.103.1",
     "sharp": "^0.34.5",
     "typescript": "5.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mirmachynka/restaurace-strilky.cz.git"
+  },
+  "homepage": "https://restaurace-strilky.cz",
+  "bugs": {
+    "url": "https://github.com/mirmachynka/restaurace-strilky.cz/issues"
   }
 }
