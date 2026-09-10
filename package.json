@@ -7,14 +7,14 @@
       "website": "https://trebired.com"
     },
     "product": {
-      "displayName": "restaurace-strilky.cz",
+      "displayName": "Restaurace Střílky",
       "name": "restaurace-strilky-cz",
       "website": "https://restaurace-strilky.cz"
     }
   },
   "name": "restaurace-strilky-cz",
   "version": "1.0.0",
-  "description": "Marketing site for Restaurace St\u0159\u00edlky: restaurant, pub and accommodation. React frontend, static build, no backend.",
+  "description": "Marketing site for Restaurace Střílky: restaurant, pub and accommodation. React frontend, static build, no backend.",
   "type": "module",
   "private": true,
   "license": "MIT",

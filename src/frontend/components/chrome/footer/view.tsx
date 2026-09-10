@@ -47,7 +47,7 @@ function FooterContent() {
     </TextLink>
     </div>
     <span className="site-foot__meta">
-    &copy; {FOUNDED_YEAR} {productDisplayName}. {translate("rights")}
+    &copy; {FOUNDED_YEAR} {productDisplayName}
     </span>
     </div>
     </div>
