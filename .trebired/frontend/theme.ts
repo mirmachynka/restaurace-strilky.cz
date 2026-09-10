@@ -1,7 +1,5 @@
 import type { FrontendDesignConfig, FrontendDesignInteractionsConfig, FrontendRuntimeConfig, FrontendThemeConfig } from "@trebired/frontend/config";
 
-import { semantic } from "./tokens";
-
 export const theme = {
   dark: "light",
   defaultMode: "light",
@@ -13,18 +11,18 @@ export const theme = {
 
 export const interactions = {
   activePress: {
-    enabled: true,
+    enabled: false,
   },
 } satisfies FrontendDesignInteractionsConfig;
 
 export const semantics = {
   anchorOffset: "5rem",
   heading: {
-    fontWeight: "900",
+    fontWeight: "700",
   },
   selection: {
-    bg: semantic.highlight,
-    text: semantic.surface1,
+    bg: "#f3eee7",
+    text: "#241f1b",
   },
   transitionFast: "120ms",
 } satisfies NonNullable<FrontendDesignConfig["semantics"]>;

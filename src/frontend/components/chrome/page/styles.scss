@@ -63,11 +63,6 @@ body {
   color: var(--text-color-muted);
 }
 
-::selection {
-  background: color-mix(in oklch, var(--primary-500), transparent 88%);
-  color: var(--text-color);
-}
-
 @media (min-width: 768px) {
   :root {
     --site-gutter: 1.5rem;

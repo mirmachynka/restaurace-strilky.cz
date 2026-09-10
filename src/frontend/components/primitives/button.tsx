@@ -1,7 +1,7 @@
 import { frontendClassName, surfaceClass } from "@trebired/frontend";
 import type { AnchorHTMLAttributes, ReactNode } from "react";
 
-type ButtonVariant = "accent" | "outline" | "primary" | "white";
+type ButtonVariant = "accent" | "ghost" | "outline" | "primary" | "white";
 
 type ButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: ReactNode;
@@ -12,7 +12,8 @@ type ButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 };
 
 const TONE_BY_VARIANT: Record<ButtonVariant, string> = {
-  accent: "highlight",
+  accent: "accent",
+  ghost: "ghost",
   outline: "outline",
   primary: "highlight",
   white: "white",
@@ -20,7 +21,7 @@ const TONE_BY_VARIANT: Record<ButtonVariant, string> = {
 
 function Button({ children, className, href, size = "md", variant = "primary", ...rest }: ButtonProps) {
   const base = surfaceClass(frontendClassName("button"), { size, tone: TONE_BY_VARIANT[variant] });
-  const classes = [base, `site-button site-button--${variant}`, className].filter(Boolean).join(" ");
+  const classes = [base, className].filter(Boolean).join(" ");
 
   return (
     <a className={classes} href={href} {...rest}>

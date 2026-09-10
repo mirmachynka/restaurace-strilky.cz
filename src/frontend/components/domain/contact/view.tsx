@@ -28,7 +28,7 @@ function ContactAddresses({ translate }: { translate: I18nTranslator }) {
           rel="noopener noreferrer"
           size="sm"
           target="_blank"
-          variant="outline"
+          variant="ghost"
           >
           {translate("mapAction")}
           </Button>
