@@ -7,8 +7,8 @@ This project follows semantic versioning once published.
 ## 1.0.0
 
 - Migrated the site from Vite, Tailwind CSS, shadcn/ui and `@base-ui/react` to the Trebired application layout: `.trebired/*` package configs, `src/frontend`, `src/bin`, `src/types`, built by `@trebired/bundler` and rendered with `@trebired/frontend`.
-- Added English. Czech is served at `/` and English under `/en`, each as its own prerendered document with its own `<html lang>`, title, description, canonical URL and `hreflang` set.
-- Added `@trebired/seo` for canonical URLs, `hreflang` alternates, Open Graph and Twitter tags, JSON-LD, `robots.txt` and `sitemap.xml`, replacing the hand-written head in `index.html`.
+- Added English at the same URL. Both languages are prerendered into one document; the visitor's saved or browser language is shown before the application bundle runs, and switching re-renders the page in place without a reload.
+- Added `@trebired/seo` for canonical URLs, Open Graph and Twitter tags, JSON-LD, `robots.txt` and `sitemap.xml`, replacing the hand-written head in `index.html`.
 - Replaced the hand-written `@font-face` blocks with `@trebired/frontend` font assets: Inter for text and Playfair Display for headings.
 - Replaced the local lightbox with the `@trebired/frontend` media system, which renders through a portal, traps and restores focus, and reference counts the body scroll lock.
 - Replaced `lucide-react` with `@trebired/frontend` Remix icons rendered from a build-time static cache, so the page makes no icon requests.

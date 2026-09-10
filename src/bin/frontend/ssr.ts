@@ -2,11 +2,12 @@ import { bundle } from "@trebired/bundler";
 import path from "node:path";
 
 import { logger } from "#fj03d91mfw5h";
-import { localeShellRoutes } from "@trebired/frontend";
+import { createLocaleDocumentBody } from "@trebired/frontend";
 
 import { allRoutePaths } from "#11t2u7sblpl8";
 import { LANGUAGE_ROUTING } from "#v7sa4g4qkjw7";
 import { siteDefines } from "./options";
+import { siteShellMeta } from "./seo";
 
 const SSR_OUT_DIR = ".ssr";
 const SSR_ENTRY_OUTPUT = `${SSR_OUT_DIR}/src/frontend/ssr/entry.js`;
@@ -34,6 +35,19 @@ async function buildSsrBundle(supportedLanguages: readonly string[], rootDir: st
   });
 }
 
+function localizedBody(routePath: string, render: (locale: string) => string): string {
+  const locales = LANGUAGE_ROUTING.locales;
+  const meta = locales.map((locale) => {
+      const shell = siteShellMeta(routePath, locale);
+      return [locale, { description: shell.description, title: shell.title }];
+  });
+  return createLocaleDocumentBody({
+      bodies: Object.fromEntries(locales.map((locale) => [locale, render(locale)])),
+      defaultLocale: LANGUAGE_ROUTING.defaultLocale,
+      meta: Object.fromEntries(meta),
+  });
+}
+
 async function renderRouteBodies(
   supportedLanguages: readonly string[],
   rootDir: string,
@@ -46,8 +60,8 @@ async function renderRouteBodies(
   };
 
   const bodies: Record<string, string> = {};
-  for (const route of localeShellRoutes(allRoutePaths(), LANGUAGE_ROUTING)) {
-    bodies[route.path] = mod.renderRouteBody(route.sourcePath, route.locale);
+  for (const routePath of allRoutePaths()) {
+    bodies[routePath] = localizedBody(routePath, (locale) => mod.renderRouteBody(routePath, locale));
   }
   return bodies;
 }

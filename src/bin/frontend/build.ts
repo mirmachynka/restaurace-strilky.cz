@@ -12,7 +12,7 @@ import type {
 } from "@trebired/bundler";
 import path from "node:path";
 
-import { createLocaleBootScript, localeShellRoutes } from "@trebired/frontend";
+import { createLocaleBootScript } from "@trebired/frontend";
 
 import { logger } from "#fj03d91mfw5h";
 import { LANGUAGE_ROUTING } from "#v7sa4g4qkjw7";
@@ -23,7 +23,7 @@ import { siteRobotsTxt, siteShellMeta, siteSitemap, siteStructuredData } from ".
 
 type SiteBuildMode = "development" | "production";
 
-const SHELL_LANG = "cs";
+const SHELL_LANG = LANGUAGE_ROUTING.defaultLocale;
 
 async function resolveSiteBundlerOptions(
   mode: SiteBuildMode,
@@ -44,10 +44,10 @@ async function writeSiteShell(
   rootDir: string,
 ): Promise<void> {
   const bodies = await renderRouteBodies(options.supportedI18nLanguages || [], rootDir);
-  const routes = localeShellRoutes(allRoutePaths(), LANGUAGE_ROUTING).map((route) => ({
-        body: `${bodies[route.path] || ""}${siteStructuredData(route.sourcePath, rootDir)}`,
-        meta: { ...siteShellMeta(route.sourcePath, route.locale), lang: route.locale },
-        path: route.path,
+  const routes = allRoutePaths().map((routePath) => ({
+        body: `${bodies[routePath] || ""}${siteStructuredData(routePath, rootDir)}`,
+        meta: { ...siteShellMeta(routePath, SHELL_LANG), lang: SHELL_LANG },
+        path: routePath,
   }));
   await buildStaticShell({
       build,

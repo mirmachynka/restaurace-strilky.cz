@@ -43,11 +43,11 @@ bun i
 bun run dev
 ```
 
-The dev server runs behind the Code Discipline gate and serves on port 3000. `bun run build` writes the client and one prerendered document per locale into `dist`, the directory Netlify publishes. `bun run verify` runs the discipline check, the typecheck and the build.
+The dev server runs behind the Code Discipline gate and serves on port 3000. `bun run build` writes the client and one prerendered document per route, carrying every language, into `dist`, the directory Netlify publishes. `bun run verify` runs the discipline check, the typecheck and the build.
 
 ## Screens
 
-Czech at `/` and English at `/en`, each served as its own prerendered document:
+Czech by default and English after switching, both at `/`:
 
 | | |
 | --- | --- |
@@ -61,13 +61,13 @@ Czech at `/` and English at `/en`, each served as its own prerendered document:
 
 ## Concepts
 
-### One page per locale, prerendered, then hydrated
+### One page, every language, prerendered, then hydrated
 
-`src/frontend/pages/home.tsx` composes four sections: the hero, the two venues, the lunch menu and contact. At build time `src/frontend/ssr/entry.tsx` renders them once per locale inside `LocaleProvider`, and `@trebired/bundler` writes each into its own document with its own head tags. In the browser the header and footer hydrate as their own roots and the page body hydrates as a live island.
+`src/frontend/pages/home.tsx` composes four sections: the hero, the two venues, the lunch menu and contact. At build time `src/frontend/ssr/entry.tsx` renders them once per locale inside `LocaleProvider`, and `src/bin/frontend/ssr.ts` hands the renders to `createLocaleDocumentBody()` from `@trebired/frontend`: Czech becomes the live markup and English an inert template in the same document. In the browser the header and footer hydrate as their own roots and the page body hydrates as a live island.
 
-### Locale-prefixed routing
+### One URL, language switched in place
 
-Czech is served at `/` and English at `/en`, each a separate prerendered document with its own `<html lang>`, title, description, canonical URL and `hreflang` set. `@trebired/frontend` owns the mechanism: a boot script in the head resolves the visitor's locale from storage or the browser and redirects before first paint, so the language is never corrected after the page is visible.
+Both languages live at `/`. A boot script in the head resolves the visitor's language from their saved choice, the `ui_lang` cookie or the browser, and when it is English the template is swapped in while the document is still parsing, so a reload shows English before the application bundle runs. Switching language re-renders every root in place and updates `<html lang>`, the title and the description, with no reload and no change to the URL. Search engines index the Czech page.
 
 ### Third-party embeds
 
