@@ -34,6 +34,5 @@ export const shell = {
       background: token.colorMix(token.color("white", "500"), "85%", "transparent"),
       border,
     },
-    toggle: { iconSize: "1.25rem", size: "2.5rem" },
   },
 };
