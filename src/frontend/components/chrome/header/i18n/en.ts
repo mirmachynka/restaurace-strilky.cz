@@ -10,4 +10,5 @@ export default defineMessages({
       lunch: "Lunch menu",
       venues: "Our venues",
     },
+    navLabel: "Sections",
 });

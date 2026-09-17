@@ -10,4 +10,5 @@ export default defineMessages({
       lunch: "Polední menu",
       venues: "Provozovny",
     },
+    navLabel: "Sekce",
 });

@@ -4,6 +4,11 @@ All notable changes to `restaurace-strilky-cz` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.1.0
+
+- Fixed the mobile menu. The open menu shrank to the width of its content and sat centred in the header, so the links were indented and the divider above them floated mid-row; the panel also pushed the page down instead of covering it, and the language switcher was missing on a phone entirely. The header and its menu now come from `SiteHeader` in `@trebired/frontend` 13.8.0: one full-width panel under the bar, links along the left edge, and the language switcher and the call to action in a row beneath them. It closes when a link is chosen, on Escape, on a press outside the header and when the window grows to desktop width.
+- The header is no longer described in this repository as markup and CSS. It is a brand, a list of links and the actions beside them, and its look is set through `components.shell.header` tokens.
+
 ## 1.0.4
 
 - The language menu takes each language's name from `languageName` in `@trebired/frontend` 13.7.0, which names a language in that language (Čeština, English). The menu read the same before; a language added later is now named correctly without a hand-written label.
