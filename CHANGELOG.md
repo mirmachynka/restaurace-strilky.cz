@@ -4,6 +4,10 @@ All notable changes to `restaurace-strilky-cz` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.2.1
+
+- Moved to `@trebired/frontend` 13.11.1, which changes the graph cards this site does not use. The header is unchanged.
+
 ## 1.2.0
 
 - The header bar is 5rem tall instead of 4rem, and the navigation and menu links take their sizes from `@trebired/frontend` 13.9.0, which fixes them for every site. The header now reads at the same size on all of them. The brand keeps its own type size and font.
