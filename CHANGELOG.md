@@ -4,6 +4,10 @@ All notable changes to `restaurace-strilky-cz` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.2.0
+
+- The header bar is 5rem tall instead of 4rem, and the navigation and menu links take their sizes from `@trebired/frontend` 13.9.0, which fixes them for every site. The header now reads at the same size on all of them. The brand keeps its own type size and font.
+
 ## 1.1.1
 
 - The menu toggle is the same size as on the other sites: a 3rem button with a 2rem icon, fixed by `@trebired/frontend` 13.8.1 rather than chosen here. It was a little smaller.

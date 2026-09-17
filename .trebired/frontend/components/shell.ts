@@ -12,7 +12,6 @@ export const shell = {
       fontWeight: "700",
     },
     gap: "1rem",
-    height: "4rem",
     link: {
       color: token.colorMix(semantic.textColor, "70%", "transparent"),
       fontWeight: "500",
@@ -26,7 +25,7 @@ export const shell = {
       background: token.color("white", "500"),
       border,
       footer: { border },
-      link: { color: semantic.textColor, fontSize: "1rem", fontWeight: "500", padding: "0.625rem 0" },
+      link: { color: semantic.textColor, fontWeight: "500", padding: "0.625rem 0" },
     },
     paddingInline: "clamp(1rem, 3vw, 1.5rem)",
     root: {
