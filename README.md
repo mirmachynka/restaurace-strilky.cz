@@ -10,12 +10,6 @@
 
 ---
 
-This repository owns what is specific to this site: the copy and its Czech and English translations, the four sections, and the design values in `.trebired/`. The `@trebired/*` packages own everything generic: the build, the browser runtime, locale routing, the gallery lightbox, SEO artifacts and logging. menicka.cz owns the lunch menu, which the page embeds, and Google owns the map. The operator owns the Netlify site and the DNS record. This repository does not own a server, a database, table bookings or the menu data.
-
-The output is static files. There is no backend, no contact form, no accounts and no analytics.
-
-Restaurace Střílky is a Trebired product, licensed under the MIT License. See [LICENSE](LICENSE).
-
 ## Contents
 
 - [Install](#install)
